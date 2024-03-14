@@ -1,0 +1,16 @@
+show databases;
+create database harinabuena;
+use harinabuena;
+select database();
+show tables;
+drop table harinabuena_tabla;
+
+create table harinabuena_tabla( 
+	texto text,
+	numero numeric,
+    años year);
+desc harinabuena_tabla;
+insert into harinabuena_tabla(texto,numero,años) values('andy',15,2004);
+select * from harinabuena_tabla;
+drop table harinabuena_tabla;
+drop database harinabuena;
