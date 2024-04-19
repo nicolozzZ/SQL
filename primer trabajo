@@ -1,14 +1,15 @@
-show databases;
 create database harinabuena;
 use harinabuena;
 select database();
-show tables;
+show databases;
 create table harinabuena_tabla( 
 	Mercancia text,
 	Cantidad numeric,
     Empiezo year);
+show tables;
+insert into harinabuena_tabla(Mercancia,Cantidad,Empiezo) 
+values('marihuana',200,2004);
 desc harinabuena_tabla;
-insert into harinabuena_tabla(Mercancia,Cantidad,Empiezo) values('marihuana',200,2004);
 select * from harinabuena_tabla;
 drop table harinabuena_tabla;
 drop database harinabuena;
